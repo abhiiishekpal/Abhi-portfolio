@@ -1,442 +1,569 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Abhishek Pal — Full-stack web developer and IT student."
+    />
     <title>Abhishek Pal | Portfolio</title>
-    <link rel="icon" type="image/jpeg" href="assets/images/profile-head.jpg">
-    <link rel="apple-touch-icon" href="assets/images/profile-head.jpg">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-</head>
-
-<body>
-    <div class="welcome-screen" id="welcomeScreen" aria-label="Portfolio welcome screen">
-        <div class="welcome-card">
-            <p class="eyebrow">Abhishek Pal</p>
-            <p class="time-greeting" id="timeGreeting">Good Evening</p>
-            <h1>Welcome to<br>my portfolio</h1>
-            <button class="button ghost" id="goBackButton" type="button">Go Back</button>
-            <button class="button gradient" id="viewPortfolioButton" type="button">View Portfolio</button>
+    <link
+      rel="icon"
+      href="assets/images/Professional Engineering Lab Portrait.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <aside class="sidebar" aria-label="Portfolio navigation">
+      <a href="#home" class="brand"
+        ><span>AP</span><b>Abhishek<br /><em>Pal</em></b></a
+      >
+      <nav class="side-nav">
+        <a class="active" href="#home"><i>01</i>Home</a
+        ><a href="#about"><i>02</i>About</a><a href="#skills"><i>03</i>Skills</a
+        ><a href="#projects"><i>04</i>Projects</a
+        ><a href="#experience"><i>05</i>Experience</a
+        ><a href="#education"><i>06</i>Education</a
+        ><a href="#certificates"><i>07</i>Certificates</a
+        ><a href="#contact"><i>08</i>Contact</a>
+      </nav>
+      <div class="side-bottom">
+        <div class="social-row">
+          <a
+            href="https://github.com/KingAbhishekPal"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            ><i class="fa-brands fa-github"></i></a
+          ><a
+            href="https://www.linkedin.com/in/kingabhishekpal"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin"></i></a
+          ><a href="mailto:abhialokpal2143@gmail.com" aria-label="Email"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
         </div>
-    </div>
-
-    <nav class="navbar">
-        <a class="navbar-logo" href="#main" aria-label="Abhishek Pal home">Abhishek Pal</a>
-
-        <div class="navbar-links" aria-label="Primary navigation">
-            <a href="#main">Home</a>
-            <a href="#about-self">About</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#certificate-experience">Experience</a>
-            <a href="#contact">Contact</a>
+        <a
+          class="resume-link"
+          href="assets/docs/abhishek-pal-resume.pdf"
+          target="_blank"
+          rel="noopener"
+          ><i class="fa-solid fa-circle-down"></i> Resume</a
+        >
+      </div>
+    </aside>
+    <header class="mobile-header">
+      <a href="#home" class="brand"
+        ><span>AP</span><b>Abhishek <em>Pal</em></b></a
+      ><button class="menu-button" aria-label="Open menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+    <main>
+      <section id="home" class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            FULL-STACK WEB DEVELOPER &nbsp;|&nbsp; DATA ANALYTICS ENTHUSIAST
+            &nbsp;
+          </p>
+          <p class="hello">Hi, I'm</p>
+          <h1>Abhishek <span>Pal</span></h1>
+          <h2>I'm <span id="typingText">a Web Developer</span><b>|</b></h2>
+          <p class="lead">
+            I build responsive web applications and practical digital
+            experiences using HTML, CSS, JavaScript, React, Node.js, Express,
+            MongoDB, SQL, and Python.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="#projects">Explore My Work</a
+            ><a
+              class="button outline"
+              href="assets/docs/abhishek-pal-resume.pdf"
+              target="_blank"
+              rel="noopener"
+              >Download CV</a
+            ><a class="button outline" href="#contact">Get In Touch</a>
+          </div>
+          <div class="hero-socials">
+            <a 
+              href="https://wa.me/919198299405" 
+              target="_blank" 
+              rel="noopener" 
+              aria-label="WhatsApp"
+              ><i class="fa-brands fa-whatsapp"></i></a
+            ><a
+              href="https://www.instagram.com/king.abhishek.pal"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i></a
+            ><a
+              href="https://x.com/KingAbhishekPal"
+              target="_blank"
+              rel="noopener"
+              aria-label="X"
+              ><i class="fa-brands fa-x-twitter"></i></a
+            ><a
+              href="https://www.linkedin.com/in/kingabhishekpal"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin"></i></a
+            ><a
+              href="https://github.com/KingAbhishekPal"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
+              ><i class="fa-brands fa-github"></i
+            ><a 
+              href="mailto:abhialokpal2143@gmail.com" aria-label="Gmail"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </div>
+          <div class="stats">
+            <div><strong>5+</strong><span>Projects</span></div>
+            <div><strong>12+</strong><span>Technologies</span></div>
+            <div><strong>3+</strong><span>Yr Learning</span></div>
+            <div><strong>100%</strong><span>Dedication</span></div>
+          </div>
         </div>
-    </nav>
-
-    <main class="hero" id="main">
-        <section class="hero-copy">
-            <p class="eyebrow">Web Developer & Data Analyst Enthusiast</p>
-            <h1>Hi, I'm <span>Abhishek Pal</span></h1>
-            <p>
-                I am a Full-Stack Web Developer and B.Tech Information Technology student at Rajkiya Engineering
-                College, Bijnor. I build responsive web apps with React, Node.js, Express, MongoDB, SQL, and clean UI.
-            </p>
-
-            <div class="hero-actions">
-                <a class="button gradient" href="#contact">Hire Me</a>
-                <a class="button ghost" href="#projects">View Projects</a>
-                <a class="button ghost" href="assets/docs/abhishek-pal-resume.pdf" target="_blank" rel="noopener">Resume</a>
-            </div>
-
-            <div class="hero-socials" aria-label="Social profiles">
-                <a href="https://www.instagram.com/king.abhishek.pal" target="_blank" rel="noopener" aria-label="Instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://x.com/KingAbhishekPal" target="_blank" rel="noopener" aria-label="X">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/kingabhishekpal" target="_blank" rel="noopener" aria-label="LinkedIn">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="https://www.youtube.com/@Student_life_moment" target="_blank" rel="noopener" aria-label="YouTube">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <section class="section about" id="about-self">
-        <div class="section-heading">
-            <p class="eyebrow">About Me</p>
-            <h2>Focused on practical, user-friendly digital products.</h2>
+        <div class="hero-visual">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <img
+            src="assets/images/Professional Engineering Lab Portrait.png"
+            alt="Abhishek Pal"
+          />
+          <div class="code-card">
+            <span><i></i><i></i><i></i></span
+            ><code
+              >const developer = {<br />&nbsp;name:
+              <b>'Abhishek Pal'</b>,<br />&nbsp;stack:
+              <b>'MERN'</b>,<br />&nbsp;passion:
+              <b>'clean code'</b>,<br />&nbsp;status: <b>available</b
+              ><br />};</code
+            >
+          </div>
         </div>
-
+      </section>
+      <section id="about" class="section">
+        <div class="section-title">
+          <p>INTRODUCTION</p>
+          <h2>About <span>Me</span></h2>
+        </div>
         <div class="about-layout">
-            <div class="profile-frame">
-                <img src="assets/images/profile-head.jpg" alt="Portrait of Abhishek Pal">
-                <div class="profile-badge">
-                    <strong>IT Student</strong>
-                    <span>Web + Data</span>
-                </div>
+          <div>
+            <p class="about-text">
+              I am Abhishek Pal, a motivated B.Tech Information Technology
+              student at Rajkiya Engineering College, Bijnor. I have hands-on
+              experience in frontend and backend web development and enjoy
+              turning ideas into clean, useful, responsive web experiences.
+            </p>
+            <p class="about-text">
+              Alongside my degree, I continuously build and strengthen my
+              technical skills in React, Node.js, Express.js, MongoDB, SQL, and
+              Python. I have completed a Web Development Internship at CodeSoft
+              and a Lenovo internship focused on AI-Driven Web Application and
+              Product Development. I have also completed several
+              industry-focused certifications and learning programs, including
+              Lenovo LEAF Next Gen Scholar, TCS iON AI & Cybersecurity
+              Awareness, Simplilearn Introduction to Data Analytics, Databricks
+              SQL Analytics and BI on Databricks, and the Forage Product
+              Management Job Simulation. These experiences have helped me
+              develop practical knowledge in web development, artificial
+              intelligence, cybersecurity, data analytics, SQL, business
+              intelligence, and product management.
+            </p>
+            <div class="pill-row">
+              <span
+                ><i class="fa-solid fa-graduation-cap"></i>B.Tech IT
+                Student</span
+              ><span><i class="fa-solid fa-code"></i>MERN Developer</span
+              ><span><i class="fa-solid fa-lightbulb"></i>Problem Solver</span>
             </div>
-
-            <div class="glass-panel about-details">
-                <span class="about-label">Full-Stack Web Developer</span>
-                <h3>Clean interfaces, useful logic, and scalable web applications.</h3>
+            <div class="actions">
+              <a
+                class="button primary"
+                href="assets/docs/abhishek-pal-resume.pdf"
+                target="_blank"
+                >Get CV <i class="fa-solid fa-circle-down"></i></a
+              ><a class="button outline" href="#contact"
+                >Get In Touch <i class="fa-solid fa-circle-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="about-art">
+            <i class="fa-solid fa-laptop-code"></i
+            ><span class="art-line l1"></span><span class="art-line l2"></span
+            ><span class="art-line l3"></span>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="section">
+        <div class="section-title">
+          <p>EXPERTISE</p>
+          <h2>My <span>Skills</span></h2>
+        </div>
+        <div class="skill-groups">
+          <article class="skill-group">
+            <h3>Frontend</h3>
+            <div class="skill-grid">
+              <div>
+                <i class="fa-brands fa-html5 html"></i><b>HTML5</b
+                ><small>90%</small>
+              </div>
+              <div>
+                <i class="fa-brands fa-css3-alt css"></i><b>CSS3</b
+                ><small>88%</small>
+              </div>
+              <div>
+                <i class="fa-brands fa-js js"></i><b>JavaScript</b
+                ><small>78%</small>
+              </div>
+              <div>
+                <i class="fa-brands fa-react react"></i><b>React.js</b
+                ><small>75%</small>
+              </div>
+            </div>
+          </article>
+          <article class="skill-group">
+            <h3>Backend</h3>
+            <div class="skill-grid">
+              <div>
+                <i class="fa-brands fa-node-js node"></i><b>Node.js</b
+                ><small>72%</small>
+              </div>
+              <div>
+                <i class="fa-solid fa-server"></i><b>Express</b
+                ><small>72%</small>
+              </div>
+              <div>
+                <i class="fa-solid fa-leaf"></i><b>MongoDB</b><small>70%</small>
+              </div>
+            </div>
+          </article>
+          <article class="skill-group">
+            <h3>Data & Tools</h3>
+            <div class="skill-grid">
+              <div>
+                <i class="fa-brands fa-python python"></i><b>Python</b
+                ><small>70%</small>
+              </div>
+              <div>
+                <i class="fa-solid fa-database sql"></i><b>MySQL</b
+                ><small>72%</small>
+              </div>
+              <div>
+                <i class="fa-brands fa-git-alt git"></i><b>Git & GitHub</b
+                ><small>75%</small>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="projects" class="section">
+        <div class="section-title">
+          <p>SELECTED WORK</p>
+          <h2>Featured <span>Projects</span></h2>
+        </div>
+        <div class="project-grid">
+        <article class="project-card">
+            <img src="assets/images/Screenshot 2026-08-11 221637.png" alt="Blog App project" />
+            <div>
+                <h3>Blog App</h3>
                 <p>
-                    I am Abhishek Pal, a motivated B.Tech student specializing in Information Technology with hands-on
-                    experience in frontend and backend web development.
+                    A full-stack blog application built with Node.js, Express.js, and
+                    MongoDB for creating, managing, and viewing blog posts.
                 </p>
+                <a href="YOUR-BLOG-APP-LIVE-LINK" target="_blank" rel="noopener">Live View <i
+                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </article>
+        <article class="project-card">
+            <img
+              src="assets/images/handmade-ceramics-preview.png"
+              alt="Handmade Ceramics project"
+            />
+            <div>
+              <h3>Handmade Ceramics</h3>
+              <p>
+                A product website concept for handmade ceramic pieces with a
+                crafted visual style.
+              </p>
+              <a
+                href="https://kingabhishekpal.github.io/Handmade-Ceramics/"
+                target="_blank"
+                rel="noopener"
+                >Live View <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </article>
+          <article class="project-card">
+            <img
+              src="assets/images/note-api-preview.png"
+              alt="Note API project"
+            />
+            <div>
+              <h3>Note API</h3>
+              <p>
+                A RESTful backend API for note management built with Node.js,
+                Express.js, and MongoDB.
+              </p>
+              <a
+                href="https://github.com/KingAbhishekPal/Note-api"
+                target="_blank"
+                rel="noopener"
+                >View Code <i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </article>
+          <article class="project-card">
+            <img
+              src="assets/images/payment-fraud-preview.png"
+              alt="Payment fraud detection project"
+            />
+            <div>
+              <h3>Payment Fraud Detection</h3>
+              <p>
+                A data-focused project idea for identifying risky online
+                transactions.
+              </p>
+              <a
+                href="https://github.com/KingAbhishekPal"
+                target="_blank"
+                rel="noopener"
+                >View Code <i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="experience" class="section">
+        <div class="section-title">
+          <p>WORK HISTORY</p>
+          <h2>Experience</h2>
+        </div>
+        <article class="experience-card">
+            <span></span>
+            <div>
+                <h3>AI-Driven Web Application & Product Development Internship</h3>
+                <h4>Lenovo</h4>
+                <time>June 2026 — July 2026</time>
                 <p>
-                    I have completed a web development internship at CodeSoft and earned certifications in Web
-                    Development, AI, Cybersecurity, Data Analytics, SQL, and Business Intelligence.
+                    Completed a six-week internship focused on AI-driven web application
+                    and product development, gaining hands-on experience in web
+                    technologies, artificial intelligence, and developing practical
+                    technology solutions.
                 </p>
-
-                <div class="about-highlights">
-                    <div>
-                        <strong>Frontend</strong>
-                        <span>HTML, CSS, JS, React</span>
-                    </div>
-                    <div>
-                        <strong>Backend</strong>
-                        <span>Node, Express, APIs</span>
-                    </div>
-                    <div>
-                        <strong>Database</strong>
-                        <span>MongoDB, MySQL, Firebase</span>
-                    </div>
-                </div>
-
-                <div class="about-actions">
-                    <a class="button gradient" href="#contact">Get In Touch</a>
-                    <a class="button ghost" href="#projects">See Work</a>
-                    <a class="button ghost" href="assets/docs/abhishek-pal-resume.pdf" target="_blank" rel="noopener">Download Resume</a>
-                </div>
             </div>
+        </article>
+        <article class="experience-card">
+          <span></span>
+          <div>
+            <h3>Web Development Internship</h3>
+            <h4>CodeSoft</h4>
+            <time>15 Sep 2025 — 15 Oct 2025</time>
+            <p>
+              Completed a one-month web development internship with hands-on
+              experience creating responsive web pages using HTML, CSS, and
+              JavaScript.
+            </p>
+          </div>
+        </article>
+      </section>
+      <section id="education" class="section">
+        <div class="section-title">
+          <p>ACADEMIC BACKGROUND</p>
+          <h2>Learning <span>Journey</span></h2>
         </div>
-    </section>
-
-    <section class="section" id="education">
-        <div class="section-heading">
-            <p class="eyebrow">Learning Journey</p>
-            <h2>Academic path and current focus areas.</h2>
-        </div>
-
-        <div class="education-grid">
-            <article class="education-card">
-                <img src="assets/images/btech-campus.webp" alt="Rajkiya Engineering College Bijnor campus">
-                <div class="education-content">
-                    <span class="education-year">Sep 2024 - 2027</span>
-                    <h3>B.Tech in Information Technology</h3>
-                    <p>Rajkiya Engineering College, Bijnor</p>
-                    <div class="education-meta">
-                        <span>CGPA 6.8</span>
-                        <span>AKTU</span>
-                    </div>
-                    <ul class="education-points">
-                        <li>Core subjects: DSA, DBMS, OS, and Computer Networks</li>
-                        <li>Learning web development, Python, SQL, and data analytics</li>
-                    </ul>
-                </div>
-            </article>
-
-            <article class="education-card">
-                <img src="assets/images/diploma-campus.jpg" alt="Government Polytechnic Kutana campus">
-                <div class="education-content">
-                    <span class="education-year">2020 - 2023</span>
-                    <h3>Diploma in Civil Engineering</h3>
-                    <p>Government Polytechnic Kutana Baraut, Baghpat, Uttar Pradesh</p>
-                    <div class="education-meta">
-                        <span>70%</span>
-                        <span>BTEUP</span>
-                    </div>
-                    <ul class="education-points">
-                        <li>Studied surveying, construction materials, estimation, and structural basics</li>
-                        <li>Built practical problem-solving skills through drawings and field concepts</li>
-                    </ul>
-                </div>
-            </article>
-
-            <article class="education-card">
-                <img src="assets/images/high-school.jpg" alt="Jwala Devi Saraswati Vidya Mandir Inter College">
-                <div class="education-content">
-                    <span class="education-year">2018 - 2020</span>
-                    <h3>High School</h3>
-                    <p>Jwala Devi Saraswati Vidya Mandir Inter College, Gangapuri, Prayagraj</p>
-                    <div class="education-meta">
-                        <span>75%</span>
-                        <span>UP Board</span>
-                    </div>
-                    <ul class="education-points">
-                        <li>Completed foundational schooling with focus on discipline and academics</li>
-                        <li>Developed interest in technology and logical thinking</li>
-                    </ul>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <section class="section" id="skills">
-        <div class="section-heading">
-            <p class="eyebrow">Skills</p>
-            <h2>Tools I use to build and analyze.</h2>
-        </div>
-
-        <div class="skills-grid">
-            <article class="skill-card">
-                <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
-                <h3>HTML</h3>
-                <p>Semantic structure</p>
-                <span>Advanced</span>
-            </article>
-            <article class="skill-card">
-                <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
-                <h3>CSS</h3>
-                <p>Responsive layouts</p>
-                <span>Advanced</span>
-            </article>
-            <article class="skill-card">
-                <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
-                <h3>JavaScript</h3>
-                <p>Interactive UI</p>
-                <span>Intermediate</span>
-            </article>
-            <article class="skill-card">
-                <div class="skill-icon"><i class="fa-brands fa-react"></i></div>
-                <h3>React.js</h3>
-                <p>Component UI</p>
-                <span>Intermediate</span>
-            </article>
-            <article class="skill-card">
-                <div class="skill-icon"><i class="fa-brands fa-node-js"></i></div>
-                <h3>Node.js</h3>
-                <p>Server logic</p>
-                <span>Intermediate</span>
-            </article>
-            <article class="skill-card">
-                <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
-                <h3>Express.js</h3>
-                <p>REST APIs</p>
-                <span>Intermediate</span>
-            </article>
-            <article class="skill-card">
-                <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
-                <h3>Python</h3>
-                <p>Logic & analytics</p>
-                <span>Intermediate</span>
-            </article>
-            <article class="skill-card">
-                <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
-                <h3>MongoDB</h3>
-                <p>NoSQL database</p>
-                <span>Intermediate</span>
-            </article>
-            <article class="skill-card">
-                <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
-                <h3>MySQL</h3>
-                <p>SQL queries</p>
-                <span>Intermediate</span>
-            </article>
-            <article class="skill-card">
-                <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
-                <h3>Git & GitHub</h3>
-                <p>Version control</p>
-                <span>Intermediate</span>
-            </article>
-            <article class="skill-card">
-                <div class="skill-icon"><i class="fa-solid fa-chart-simple"></i></div>
-                <h3>Data Analytics</h3>
-                <p>SQL & BI</p>
-                <span>Intermediate</span>
-            </article>
-            <article class="skill-card">
-                <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
-                <h3>C</h3>
-                <p>Programming basics</p>
-                <span>Intermediate</span>
-            </article>
-        </div>
-    </section>
-
-    <section class="section" id="projects">
-        <div class="section-heading">
-            <p class="eyebrow">Recent Work</p>
-            <h2>Projects built around useful ideas.</h2>
-        </div>
-
-        <div class="project-container">
-            <article class="project-card">
-                <div class="project-media">
-                    <img src="assets/images/handmade-ceramics-preview.png" alt="Handmade ceramics project preview">
-                    <div class="project-logo" aria-hidden="true"><i class="fa-solid fa-mug-hot"></i></div>
-                </div>
-                <div class="project-content">
-                    <div class="project-tags">
-                        <span>Frontend</span>
-                        <span>Product UI</span>
-                    </div>
-                    <h3>Handmade Ceramics</h3>
-                    <p>A product website concept for handmade ceramic pieces with a crafted visual style.</p>
-                    <a href="https://kingabhishekpal.github.io/Handmade-Ceramics/" target="_blank" rel="noopener">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </article>
-
-            <article class="project-card">
-                <div class="project-media">
-                    <img src="assets/images/note-api-preview.png" alt="Note API project preview">
-                    <div class="project-logo" aria-hidden="true"><i class="fa-solid fa-code-branch"></i></div>
-                </div>
-                <div class="project-content">
-                    <div class="project-tags">
-                        <span>Backend</span>
-                        <span>API</span>
-                    </div>
-                    <h3>Note API</h3>
-                    <p>A RESTful backend API for note management built with Node.js, Express.js, and MongoDB.</p>
-                    <a href="https://github.com/KingAbhishekPal/Note-api" target="_blank" rel="noopener">View Code <i class="fa-brands fa-github"></i></a>
-                </div>
-            </article>
-
-            <article class="project-card">
-                <div class="project-media">
-                    <img src="assets/images/payment-fraud-preview.png" alt="Online payment fraud detection project preview">
-                    <div class="project-logo" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></div>
-                </div>
-                <div class="project-content">
-                    <div class="project-tags">
-                        <span>Data</span>
-                        <span>Security</span>
-                    </div>
-                    <h3>Payment Fraud Detection</h3>
-                    <p>A data-focused project idea for identifying risky online transactions.</p>
-                    <a href="#">View Project <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <section class="section" id="certificate-experience">
-        <div class="section-heading">
-            <p class="eyebrow">Certificates & Experience</p>
-            <h2>Learning by building and practicing.</h2>
-        </div>
-
-        <div class="credentials-layout">
-            <article class="experience-highlight">
-                <span>Internship</span>
-                <h3>Web Development Intern</h3>
-                <p>CodeSoft | Sep 15, 2025 - Oct 15, 2025</p>
-                <ul>
-                    <li>Completed a one-month web development internship on real-world frontend tasks.</li>
-                    <li>Built and improved responsive web pages using HTML, CSS, and JavaScript.</li>
-                    <li>Practiced Git workflows and project collaboration.</li>
-                </ul>
-            </article>
-
-            <div class="certificate-grid">
-                <article class="certificate-card primary-certificate">
-                    <span>May 2026</span>
-                    <h3>Lenovo LEAF Next Scholar Program</h3>
-                    <p>Completed a 60+ hour learning program focused on practical digital skills, assignments, online live sessions, and final live exam assessment.</p>
-                    <strong>Grade A</strong>
-                </article>
-                <article class="certificate-card">
-                    <span>Apr 2026</span>
-                    <h3>AI & Cybersecurity Awareness</h3>
-                    <p>TCS iON certificate covering AI basics, safe digital practices, cyber threats, and responsible technology awareness.</p>
-                </article>
-                <article class="certificate-card">
-                    <span>Apr 2026</span>
-                    <h3>Data Analytics</h3>
-                    <p>Simplilearn training focused on data understanding, analysis workflow, business insights, and dashboard-based decision making.</p>
-                </article>
-                <article class="certificate-card">
-                    <span>Mar 2026</span>
-                    <h3>SQL Analysis & Business Intelligence</h3>
-                    <p>Databricks certificate covering SQL analysis concepts, business intelligence basics, and data-driven reporting foundations.</p>
-                </article>
-                <article class="certificate-card">
-                    <span>30 Days</span>
-                    <h3>Python Programming Micro Course</h3>
-                    <p>Skill Course training focused on Python syntax, programming logic, problem-solving basics, and practical coding exercises.</p>
-                </article>
-                <article class="certificate-card">
-                    <span>30 Days</span>
-                    <h3>Power BI Micro Course</h3>
-                    <p>Skill Course training focused on data visualization, report building, dashboard design, and business intelligence fundamentals.</p>
-                </article>
+        <div class="timeline">
+          <article>
+            <div class="timeline-icon">
+              <i class="fa-solid fa-graduation-cap"></i>
             </div>
-        </div>
-    </section>
-
-    <section class="section contact" id="contact">
-        <div class="section-heading">
-            <p class="eyebrow">Get In Touch</p>
-            <h2>Let's build something useful.</h2>
-        </div>
-
-        <form class="contact-form">
-            <input type="text" name="name" placeholder="Your Name" aria-label="Your Name">
-            <input type="email" name="email" placeholder="Your Email" aria-label="Your Email">
-            <textarea name="message" rows="5" placeholder="Your Message" aria-label="Your Message"></textarea>
-            <button class="button gradient" type="submit">Send Message</button>
-            <div class="contact-links">
-                <a href="mailto:abhialokpal2143@gmail.com">abhialokpal2143@gmail.com</a>
-                <a href="tel:+919198299405">+91 9198299405</a>
-                <a href="assets/docs/abhishek-pal-resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+            <div>
+              <img
+                src="assets/images/btech-campus.webp"
+                alt="Rajkiya Engineering College"
+              />
+              <h3>B.Tech in Information Technology</h3>
+              <h4>Rajkiya Engineering College, Bijnor</h4>
+              <time>Sep 2024 — 2027</time>
+              <p>
+                Learning DSA, DBMS, OS, Computer Networks, web development,
+                Python, SQL, and data analytics.
+              </p>
             </div>
-        </form>
-    </section>
-
-    <footer class="footer">
-        <div class="footer-inner">
-            <div class="footer-brand">
-                <a class="footer-logo" href="#main">Abhishek Pal</a>
-                <p>Full-stack web developer and data analytics enthusiast building clean, responsive digital products.</p>
-                <div class="footer-socials" aria-label="Footer social profiles">
-                    <a href="https://www.instagram.com/king.abhishek.pal" target="_blank" rel="noopener" aria-label="Instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="https://x.com/KingAbhishekPal" target="_blank" rel="noopener" aria-label="X">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/kingabhishekpal" target="_blank" rel="noopener" aria-label="LinkedIn">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.youtube.com/@Student_life_moment" target="_blank" rel="noopener" aria-label="YouTube">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                </div>
+          </article>
+          <article>
+            <div class="timeline-icon">
+              <i class="fa-solid fa-graduation-cap"></i>
             </div>
-
-            <div class="footer-links">
-                <h3>Explore</h3>
-                <a href="#about-self">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#certificate-experience">Experience</a>
+            <div>
+              <img
+                src="assets/images/diploma-campus.jpg"
+                alt="Government Polytechnic Kutana"
+              />
+              <h3>Diploma in Civil Engineering</h3>
+              <h4>Government Polytechnic Kutana Baraut, Baghpat</h4>
+              <time>2020 — 2023</time>
+              <p>
+                Built practical problem-solving skills through drawings, field
+                concepts, and technical coursework.
+              </p>
             </div>
-
-            <div class="footer-contact">
-                <h3>Contact</h3>
-                <a href="mailto:abhialokpal2143@gmail.com"><i class="fa-solid fa-envelope"></i> abhialokpal2143@gmail.com</a>
-                <a href="tel:+919198299405"><i class="fa-solid fa-phone"></i> +91 9198299405</a>
-                <a class="footer-resume" href="assets/docs/abhishek-pal-resume.pdf" target="_blank" rel="noopener">
-                    <i class="fa-solid fa-file-arrow-down"></i> Resume
-                </a>
+          </article>
+          <article>
+            <div class="timeline-icon"><i class="fa-solid fa-school"></i></div>
+            <div>
+              <img
+                src="assets/images/high-school.jpg"
+                alt="Jwala Devi school"
+              />
+              <h3>High School</h3>
+              <h4>Jwala Devi Saraswati Vidya Mandir, Prayagraj</h4>
+              <time>2018 — 2020</time>
+              <p>
+                Completed foundational schooling with focus on academics,
+                discipline, and logical thinking.
+              </p>
             </div>
+          </article>
         </div>
-
-        <div class="footer-bottom">
-            <p>All rights reserved | Created by Abhishek Pal</p>
-            <a href="#main" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+      </section>
+      <section id="certificates" class="section">
+        <div class="section-title">
+          <p>CREDENTIALS</p>
+          <h2>My <span>Certificates</span></h2>
         </div>
+        <div class="certificate-grid">
+        
+          <article>
+            <h3>Product Management Job Simulation</h3>
+            <h4>Forage</h4>
+            <time>Sep 2026</time>
+            <p>
+              Completed a practical product management simulation covering KPI
+              selection, player insights, stakeholder analysis, and project planning.
+            </p>
+          </article>
+        
+          <article>
+            <h3>GenAI Powered Data Analytics</h3>
+            <h4>Tata iQ · Forage</h4>
+            <time>Sep 2026</time>
+            <p>
+              Worked on data analytics using GenAI, exploratory data analysis,
+              predictive modeling, stakeholder reporting, and business insights.
+            </p>
+          </article>
+        
+          <article>
+            <h3>Lenovo LEAF Net Gen Scholar</h3>
+            <h4>Lenovo</h4>
+            <time>May 2026</time>
+            <p>
+              Completed a 60+ hour learning program with practical digital skills,
+              live sessions, assignments, and assessment.
+            </p>
+          </article>
+        
+          <article>
+            <h3>AI & Cybersecurity Awareness</h3>
+            <h4>TCS iON</h4>
+            <time>Apr 2026</time>
+            <p>
+              Covered AI basics, safe digital practices, cyber threats, and
+              responsible technology awareness.
+            </p>
+          </article>
+        
+          <article>
+            <h3>SQL Analysis & BI</h3>
+            <h4>Databricks</h4>
+            <time>Mar 2026</time>
+            <p>
+              Covered SQL analysis concepts, business intelligence basics,
+              and reporting foundations.
+            </p>
+          </article>
+        
+          <article>
+            <h3>Data Analytics</h3>
+            <h4>Simplilearn</h4>
+            <time>Apr 2026</time>
+            <p>
+              Covered data understanding, analysis workflow, business insights,
+              and dashboard-driven decision making.
+            </p>
+          </article>
+        
+        </div>
+      </section>
+      <section id="contact" class="section">
+        <div class="section-title">
+          <p>GET IN TOUCH</p>
+          <h2>Get In <span>Touch</span></h2>
+        </div>
+        <div class="contact-layout">
+          <div class="contact-details">
+            <a href="mailto:abhialokpal2143@gmail.com"
+              ><i class="fa-solid fa-envelope"></i
+              ><span><b>Email</b>abhialokpal2143@gmail.com</span></a
+            ><a href="tel:+919198299405"
+              ><i class="fa-solid fa-phone"></i
+              ><span><b>Phone</b>+91 9198299405</span></a
+            >
+            <div>
+              <i class="fa-solid fa-location-dot"></i
+              ><span><b>Location</b>Uttar Pradesh, India</span>
+            </div>
+            <a
+              href="https://www.linkedin.com/in/kingabhishekpal"
+              target="_blank"
+              rel="noopener"
+              ><i class="fa-brands fa-linkedin"></i
+              ><span><b>LinkedIn</b>linkedin.com/in/kingabhishekpal</span></a
+            >
+          </div>
+          <form class="contact-form">
+            <input name="name" placeholder="Enter your name" required /><input
+              name="email"
+              type="email"
+              placeholder="Example@gmail.com"
+              required
+            /><input name="subject" placeholder="Enter subject" /><textarea
+              name="message"
+              placeholder="Write your message here"
+              required
+            ></textarea
+            ><button class="button primary" type="submit">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <span>AP</span>
+      <p>
+        © <span id="year"></span> Abhishek Pal. All rights reserved.<br />Designed
+        and developed by Abhishek Pal
+      </p>
     </footer>
-
-    <script src="js/main.js"></script>
-</body>
-
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
